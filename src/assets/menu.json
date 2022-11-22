@@ -1,0 +1,38 @@
+
+[
+    {
+        "name":"Jalapeño burger",
+        "image": "https://www.landleyskok.se/wp-content/uploads/2017/02/vegoburgare-D14I1771.jpg",
+        "lactose": "https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-dairy-2-512.png",
+        "gluten": "https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-gluten-512.png",
+        "contains": "Chickpeas beef, Jalapeño, Cheese, Fresh salad ",
+        "calories": "500 Kcal"
+    },
+
+    {
+        "name":"Beetroot burger",
+        "image": "https://biancazapatka.com/wp-content/uploads/2021/10/rote-bete-burger.jpg",
+        "lactose": "https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-dairy-2-512.png",
+        "gluten": "https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-gluten-512.png",
+        "contains": "Beetroot beef, Avocado, Red onion, Fresh salad ",
+        "calories": "400 kCal"
+    },
+
+    {
+        "name":"Bean burger",
+        "image": "https://eu-central-1.linodeobjects.com/tasteline/2019/11/vegoburgare-2048x2048.jpg",
+        "lactose": "https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-dairy-2-512.png",
+        "gluten": "https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-gluten-512.png",
+        "contains": "Bean beef, avocado, Fresh salad, Tomato",
+        "calories": "500 kCal"
+    },
+    
+    {
+        "name":"Siracha burger",
+        "image": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_1200,h_1200,c_lfill/imagevaultfiles/id_215108/cf_259/vegoburgare_med_avokado_och_srirachadressing.jpg",
+        "lactose": "https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-dairy-2-512.png",
+        "gluten": "https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-gluten-512.png",
+        "contains": "Chickpeas beef, Siracha, Cheese, Tomato ",
+        "calories": "300 kCal"
+    }
+  ]

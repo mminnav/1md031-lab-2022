@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>VEGOburger</title>
+       <meta charset="utf-8"/>
+       <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <img class="headerImage" src= "https://wallbangersburgers.com/images/design/promo2.jpg" alt="headerImage" >
+            <h1 class="headline">
+                Welcome to VEGOburger
+            </h1>
+        </header>
+        <main> 
+            <section id="burgerInformation">
+                <h2>
+                    Select burger
+                </h2>
+                <p>
+                    this is where you execute burger selection
+                </p>
+                <div class="wrapper">
+                    <div class="box jalapenoBurger">
+                        <h3>
+                            Jalapeño burger
+                        </h3>
+                        <img class="burgerPictures" src= "https://www.landleyskok.se/wp-content/uploads/2017/02/vegoburgare-D14I1771.jpg" alt="jalapenoBurger" >
+                        <dl>
+                            <dt class="ingredients">   
+                                <img class="alergies" src="https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-dairy-2-512.png" alt="containsLactose"> <img class="alergies" src="https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-gluten-512.png" alt="containsGluten">
+                            <dd>Chickpeas beef, Jalapeño, Cheese, Fresh salad </dd>
+                        </dl>
+                    </div>
+                    <div class="box beetrootBurger">
+                        <h3>
+                            Beetroot burger
+                        </h3>
+                        <img class="burgerPictures" src= "https://biancazapatka.com/wp-content/uploads/2021/10/rote-bete-burger.jpg" alt="beatrootBurger" >
+                        <dl>
+                            <dt class="ingredients">   
+                            <img class="alergies" src="https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-gluten-512.png" alt="containsGluten">
+                            <dd>Beetroot beef, Avocado, Red onion, Fresh salad</dd>
+                        </dl>
+                    </div>
+                    <div class="box beanBurger">
+                        <h3>
+                            Bean burger
+                        </h3>
+                        <img class="burgerPictures" src= "https://eu-central-1.linodeobjects.com/tasteline/2019/11/vegoburgare-2048x2048.jpg" alt="beanBurger" >
+                        <dl>
+                            <dt class="ingredients">   
+                                <img class="alergies" src="https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-dairy-2-512.png" alt="containsLactose">
+                            <dd>Bean beef, avocado, Fresh salad, Tomato</dd>
+                        </dl>
+                    </div>
+                    <div class="box sirachaBurger">
+                        <h3>
+                            Siracha burger
+                        </h3>
+                        <img class="burgerPictures" src= "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_1200,h_1200,c_lfill/imagevaultfiles/id_215108/cf_259/vegoburgare_med_avokado_och_srirachadressing.jpg" alt="sirachaBurger">
+                        <dl>  
+                            <dt class="ingredients">   
+                                <img class="alergies" src="https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-dairy-2-512.png" alt="containsLactose"> <img class="alergies" src="https://cdn3.iconfinder.com/data/icons/food-product-labels/128/contains-gluten-512.png" alt="containsGluten">
+                            <dd>Chickpeas beef, Siracha, Cheese, Tomato </dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <section id="customerInformation">
+                <form>
+                <h2>Customer information</h2>
+                <p>This is where you provide necessary information</p>
+                <h2>Delivery information</h2>
+                <h4>Full name</h4>
+                <p>
+                    <label for="firstname"></label><br>
+                    <input type="text" id="firstname" name="fn" required="required" placeholder="First name">
+                </p>
+                <p>
+                    <label for="lastname"></label><br>
+                    <input type="text" id="lastname" required="required" name="ln" placeholder="Last name">
+                </p>
+                <h4>E-mail</h4>
+                <p>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                </p>
+                <h4>Street</h4>
+                <p>
+                    <label for="Street"></label><br>
+                    <input type="text" id="Street" name="st" required="required" placeholder="Street">
+                </p>
+                <h4>House</h4>
+                <p>
+                    <label for="House"></label><br>
+                    <input type="number" id="House" name="ho" required="required" placeholder="House number">
+                </p>
+                <h4>Payment</h4>
+                <p>
+                    <label for="Payment">Payment method</label><be>
+                    <select id="payment" name="pay">
+                        <option>Card</option>
+                        <option>Swish</option>
+                        <option>Cash</option>
+                    </select>
+                 </p>
+                <h4>Gender</h4>
+                <p>
+                    <label for="Gender">Female</label><br>
+                    <input type="radio" id="gender" name="ge" required="required" placeholder="Gender">
+                </p>
+                <p>
+                    <label for="Gender">Male</label><br>
+                    <input type="radio" id="gender" name="ge" required="required" placeholder="Gender">
+                </p>
+                <p>
+                    <label for="Gender">Do not want to denounce</label><br>
+                    <input type="radio" id="gender" name="ge" required="required" placeholder="Gender" checked="checked">
+                </p>
+                </form>
+            </section>
+        </main>
+        <button class="submit" type="submit">
+            <img class="submitButtonPicture" src="https://st3.depositphotos.com/5483844/14410/v/450/depositphotos_144101443-stock-illustration-cartoon-hamburger-character-thumb-up.jpg" alt="happyHamburger">
+            Send Info
+        </button>
+        <hr>
+        <footer> 
+            &#169; 2022 VEGOburger
+        </footer>
+    </body>
+</html>
