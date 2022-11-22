@@ -1,1 +1,124 @@
-/*empty*/
+
+body {
+    font-family: Courier New;
+    /*font-size: 4mm;*/
+}
+
+#header{
+    margin: 75px;
+}
+
+h1.headline{
+    color: rgb(246, 216, 47);
+    font-size: 75px;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 150px;
+}
+
+img.headerImage{
+    opacity: 0.6;
+    object-fit: cover;
+    width:100%;
+    height: 400px;
+    object-position: center 100%;
+    /*margin: 75px;*/
+}
+
+#burgerInformation{
+    /*border: 5px dashed black;*/
+    text-align: center;
+    margin: 75px;
+    padding: 10px;
+    background-color: pink;  
+}
+
+img.burgerPictures {
+    object-fit: cover;
+    width:525px;
+    height: 400px;
+    object-position: center 50%;
+}
+
+.ingredients{
+    text-align: left;
+}
+
+img.alergies{
+    text-align: left;
+    width:30px;
+    height:30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 600px 600px;
+    /*background-color: #fff;*/
+}
+
+.box {
+    background-color: rgb(248, 229, 121);
+    color: black;
+    padding: 20px;
+    font-size: 150%;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+/*.jalapenoBurger {
+    grid-column: 1 / span 2;
+}
+
+.beetrootBurger {
+    grid-column: 3 ;
+    grid-row: 1 / span 2;
+}
+
+.beanBurger {
+    grid-column: 1 ;
+    grid-row: 2 ;
+}
+
+.sirachaBurger {
+    grid-column: 2 ;
+    grid-row: 2 ;
+}*/
+
+ #customerInformation{
+    /*border: 20px dashed white;*/
+    border: 5px dashed white;
+    margin: 75px;
+    padding: 10px;
+    background-color: black;
+    color:#FFFFFF;  
+}
+
+/*div{
+    text-align: left;
+    display: inline-block;
+    background-color: aqua;
+    margin: 10px;
+    padding: 20px;
+}
+*/
+
+img.submitButtonPicture{
+    width:50px;
+    height:50px;
+}
+
+button.submit{
+    margin: 100px 20px;
+    background-color: #FFFFFF;
+    color: #010000;
+    border-radius: 15px;
+    border: 2px solid #25c80c; 
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #25c80c;
+}
+
+
