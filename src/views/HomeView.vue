@@ -37,16 +37,16 @@
           <p>
             <input type="email" id="email" v-model="email" required="required" placeholder="E-mail address">
           </p>
-          <h4>Street</h4>
+          <!-- <h4>Street</h4>
           <p>
             <label for="Street"></label><br>
             <input type="text" id="Street" v-model="street" required="required" placeholder="Street">
-          </p>
-          <h4>House</h4>
-          <p>
+          </p> 
+          <h4>House</h4>-->
+          <!-- <p>
             <label for="House"></label><br>
             <input type="number" id="House" v-model="house" required="required" placeholder="House number">
-          </p>
+          </p> -->
           <h4>Payment</h4>
           <p>
             <label for="Payment">Payment method</label><br>
@@ -71,8 +71,16 @@
           </p>
         </form>
         <div class="container">
-          <div id="map" v-on:click="addOrder">
-            click here
+          <div id="map" v-on:click="setLocation">
+            <div id="dots">
+              <div v-bind:style="{
+                left: location.x + 'px',
+                top: location.y + 'px'
+
+              }">
+              T
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -142,15 +150,14 @@ export default {
       firstName: '',
       lastName: '',
       email: '',
-      street: '',
-      house: '',
+      // street: '',
+      // house: '',
       payment: 'Card',
       gender: 'no',
       orderedBurgers: {},
       location:{
         x: 0,
         y: 0
-
       }
     }
   },
@@ -166,63 +173,38 @@ export default {
 
     submit: function () {
       console.log("I submit")
-      console.log(this.firstName, this.lastName, this.email, this.street, this.house, this.payment, this.gender)
+      console.log(this.firstName, this.lastName, this.email, this.payment, this.gender)
       console.log(this.orderedBurgers)
 
       socket.emit("addOrder", {
         orderId: this.getOrderNumber(),
-        
-        OrderItems: this.orderedBurgers,
+        details: {
+          x: this.location.x,
+          y: this.location.y
+        },
+        orderItems: this.orderedBurgers,
         customerFirstName: this.firstName,
         customerLastName: this.lastName,
         customerEmail: this.email,
-        customerStreet: this.street,
-        customerHouse: this.house,
+        // customerStreet: this.street,
+        // customerHouse: this.house,
         customerPayment: this.payment,
         customerGender: this.gender
       }
       ); 
-    }
-      
-  
+    },
 
-    
-
-
-
-    /*var offset = {
-      x: event.currentTarget.getBoundingClientRect().left,
-      y: event.currentTarget.getBoundingClientRect().top
-    };*/
-
-    /*socket.emit("addOrder", {
-      orderId: this.getOrderNumber(),
-      details: {
+      setLocation: function (event){
+      var offset = {
+        x: event.currentTarget.getBoundingClientRect().left,
+        y: event.currentTarget.getBoundingClientRect().top
+      };
+      this.location = {
         x: event.clientX - 10 - offset.x,
         y: event.clientY - 10 - offset.y
-      },
-      orderItems: ["Beans", "Curry"]
-    }
-    );*/
-  },
-  
-
-  /*markDone: function () {
-    console.log(this.orderedBurger);
-    socket.emit("addOrder", {
-      orderId: this.getOrderNumber(),
-      details: {
-        Name: this.firstName,
-        Lastname: this.lastName,
-        Email: this.email,
-        Street: this.street,
-        House: this.house,
-        Payment: this.payment,
-        Gender: this.gender,
-      }
-    }
-    )
-  }*/
+      };
+    },
+  }
 }
 
 
